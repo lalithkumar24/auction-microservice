@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: lalith
       POSTGRES_PASSWORD: 2004
-      POSTGRES_DB: User
+      POSTGRES_DB: Users
     ports:
       - 5432:5432
     volumes:

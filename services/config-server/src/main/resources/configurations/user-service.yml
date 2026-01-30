@@ -2,11 +2,13 @@ server:
   port: 9000
 
 spring:
+  flyway:
+    enabled: true
   datasource:
-    url:  jdbc:postgresql://localhost:5432/User
+    url:  jdbc:postgresql://localhost:5432/Users
     username: lalith
     password: 2004
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
